@@ -1,4 +1,4 @@
-.wrappper {
+.wrapper {
     width: 1200px;
     margin: 0 auto;
 }
@@ -7,7 +7,7 @@
     height: 100px;
     width: 100%;
 }
-.header .wrappper {
+.header .wrapper {
     display: flex;
     padding-top: 30px;
 }
@@ -85,4 +85,295 @@ background-image: url("../images/asset-index-search.png");
     align-self: center;
     font-size: 16px;
     color: #666;
+}
+/* banner */
+.banner {
+    height: 470px;
+    /* background-color: #0092cb; */
+    background-image: url("../uploads/widget-bannerB.jpg");
+}
+.banner .wrapper {
+    height: 470px;
+    display: flex;
+    justify-content: space-between;
+}
+.banner .left {
+    width: 191px;
+    height: 470px;
+    background-color: rgba(0, 0, 0, 0.42);
+    padding: 3px 20px;
+}
+.banner .left a {
+    width: 100%;
+    height: 47px;
+    line-height: 47px;
+    display: block;
+    color: white;
+    font-size: 16px;
+    background: url("../images/asset-arrow-right.png") no-repeat right center;
+}
+.banner .left a:hover {
+    color: #00a4ff;
+    background: url("../images/asset-arrow-link.png") no-repeat right center;
+}
+.banner .right {
+    width: 218px;
+    height: 305px;
+    background-color: #209dd5;
+    border-radius: 10px;
+    margin-top: 60px;
+}
+.banner .right h3 {
+    margin-left: 14px;
+    height: 48px;
+    line-height: 48px;
+    color: white;
+    font-size: 15px
+}
+.right .studytime {
+    background-color: white;
+    height: 257px;
+    padding: 14px;
+    border-radius: 10px;
+}
+.right .studytime dl {
+    margin-bottom: 12px;
+    border-bottom: 1px solid #e0e0e0;
+}
+.right .studytime dt {
+    margin-top: 8px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+}
+.right .studytime dd {
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 8px;
+    margin-top: 2px;
+}
+.right .studytime dd span:nth-child(1){
+    color: #00a4ff;
+}
+.right .studytime dd span:nth-child(2){
+    color: #999;
+}
+.right .studytime a {
+    height: 32px;
+    display: block;
+    background-color: #00a4ff;
+    text-align: center;
+    line-height: 32px;
+    border-radius: 16px;
+    color: white;
+    font-size: 14px;
+    margin-top: 20px;
+}
+/* 精品推荐 */
+.recommend {
+    margin-top: 12px;
+    height: 60px;
+    background-color: white;
+    box-shadow: 0px 1px 2px 0px rgba(211, 211, 211, 0.5);
+    padding: 0px 20px;
+    line-height: 60px;
+    display: flex;
+    border-radius: 5px;
+}
+.recommend h3 {
+    font-size: 18px;
+    color: #00a4ff;
+    font-weight: 400;
+}
+.changeIns {
+    font-size: 16px;
+    color: #00a4ff;
+    font-weight: 400;
+}
+.recommend ul {
+    flex: 1;
+    display: flex;
+}
+.recommend li a{
+    border-right: 1px solid #999;
+    padding: 0px 24px;
+    font-size: 18px;
+}
+.recommend li:last-child a {
+    border-right: 0px;
+}
+/* 精品课程推荐 */
+.course {
+    margin-top: 15px;
+}
+.title {
+    height: 60px;
+    line-height: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+.title h3 {
+    font-size: 21px;
+    font-weight: 400;
+}
+.title .more {
+    font-size: 14px;
+    color: #999;
+    padding-right: 20px;
+    background: url(../images/asset-arrow-gray.png) no-repeat right center;
+}
+.bd ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.bd li{
+    width: 228px;
+    height: 271px;
+    background-color: #fff;
+    margin-bottom: 14px;
+}
+.bd li .pic{
+    height: 156px;
+}
+.bd li .courseInfo {
+    height: 115px;
+    background-color: #fff;
+    padding: 20px;
+}
+.bd li .courseInfo h4 {
+    height: 40px;
+    margin-bottom: 14px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+}
+.bd li .courseInfo p {
+    font-size: 14px;
+    color: #999;
+    line-height: 20px;
+}
+.bd li .courseInfo p span {
+    color: orange;
+}
+.bd li .courseInfo p i {
+    font-style: normal;
+}
+/* 前端工程师 */
+.title ul {
+    display: flex;
+    padding: 0px 20px;
+    justify-content: space-between;
+}
+.title ul li  {
+    margin-right: 60px;
+    font-size: 16px;
+}
+.title ul li .active {
+    color: #00a4ff;
+}
+.bd {
+    display: flex;
+    justify-content: space-between;
+}
+.bd .left {
+    width: 228px;
+}
+.bd .right {
+    width: 957px;
+}
+.bd .right .top {
+    margin-bottom: 15px;
+    height: 100px;
+}
+/* 牛人推荐 */
+.wrapper .content ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.wrapper .content ul li a {
+    display: block;
+}
+.content .teach {
+    position: relative;
+}
+.content .teach .studyNum {
+    background: url("../uploads/widget-learNumIco.png") no-repeat;
+    color: #ff7c2d;
+    font-size: 12px;
+    padding: 0px 5px;
+    top: 10px;
+    position: absolute;
+    right: -1px;
+    line-height: 22px;
+    height: 22px;
+    width: 84px;
+    z-index: 9;
+    text-align: center;
+}
+.content .teach .teach-info {
+    width: 100%;
+    height: 112px;
+    text-align: left;
+    bottom: 0px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    position: absolute;
+    z-index: 10;
+}
+.content .teach .teach-info ul {
+    display: block;
+}
+.wrapper .content:last-child {
+    margin-top: 10px;
+}
+/* 版权 */
+.footer {
+    height: 273px;
+    margin-top: 60px;
+    background-color: #fff;
+    padding-top: 60px;
+}
+.footer .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.footer .left {
+    width: 440px;
+}
+.footer .left p {
+    margin-top: 24px;
+    margin-bottom: 14px;
+    font-size: 12px;
+    color: #666;
+    line-height: 17px;
+}
+.footer .left .download {
+    display: block;
+    width: 120px;
+    height: 36px;
+    border: 1px solid #00a4ff;
+    color: #00a4ff;
+    font-size: 16px;
+    text-align: center;
+    line-height: 34px;
+}
+.footer .right {
+    display: flex;
+}
+.footer .right dl {
+    margin-left: 130px;
+}
+.footer .right dt {
+    margin-bottom: 12px;
+    font-size: 16px;
+    line-height: 23px;
+    font-weight: 700;
+}
+.footer .right a {
+    font-size: 14px;
+    color: #666;
+    line-height: 24px;
 }
