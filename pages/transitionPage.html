@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>过渡效果</title>
+    <style>
+        img {
+            width: 100px;
+            height: 100px;
+            opacity: 1;
+            /* 过渡效果加在标签上，而不是伪选择器上 */
+            transition: all 2s;
+        }
+        img:hover{
+            width: 100px;
+            height: 200px;
+            /* 鼠标样式 text pointer*/
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="../images/asset-myImg.jpg" alt="" srcset="">
+    </div>
+</body>
+</html>

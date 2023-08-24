@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>垂直对齐</title>
+    <style>
+        img {
+            /* 对齐方式加在内容较高的标签 */
+            /* vertical-align: middle; */
+            /* 改变图片的方式也会去掉底部的空白。和vertical-align: bottom;一样。 因为浏览器把行内块、行内标签当做文字处理，默认按基线对齐 。改为块就不按基线对齐了*/
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="../images/asset-logoIco.png" alt="">
+        8月23日，国家发改委发布消息称，自24时起，国内汽油价格和柴油价格均上调55元/吨。折合升价，92号汽油上调0.04元，95号汽油和0号柴油均上调0.05元。
+    </div>
+</body>
+</html>

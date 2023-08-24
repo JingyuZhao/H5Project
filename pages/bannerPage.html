@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>淘宝轮播图</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <style>
+        .banner {
+            width: 564px;
+            height: 315px;
+            margin: 100px auto;
+            /* 超出父标签的隐藏 */
+            overflow: hidden;
+            /* 子级绝对定位，父级相对定位 */
+            position: relative;
+        }
+        .banner ul li img {
+            width: 564px;
+            border-radius: 12px;
+            /* 去除照片底部空白 */
+            vertical-align: middle;
+        }
+        .banner ul {
+            display: flex;
+        }
+
+        /* 并集，写共同的样式 */
+        .banner .prev,
+        .banner .next {
+            /* 子级绝对定位 */
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 20px;
+            height: 30px;
+            line-height: 30px;
+            background-color: rgba(0, 0, 0, 0.3);
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            display: none;
+        }
+        /* 单独样式 */
+        .banner .prev {
+            left: 0px;
+            border-radius: 0px 15px 15px 0px;
+            
+        }
+        .banner .next {
+            right: 0px;
+            border-radius: 15px 0px 0px 15px;
+        }
+        .banner:hover .prev,
+        .banner:hover .next{
+            display: block;
+        }
+        .banner ol {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 13px;
+            background-color: rgba(255, 255, 255, 0.3);
+            display: flex;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .banner ol li {
+            width: 8px;
+            height: 8px;
+            background-color: #fff;
+            border-radius: 50%;
+            margin: 3px;
+            line-height: 8px;
+        }
+        .banner ol .banner_dot_active {
+            background-color:#ff5000;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <!-- 图片 -->
+        <ul>
+            <li>
+                <a href="">
+                    <img src="../uploads/asset-taobao-banner2.jpg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="../uploads/asset-taobao-banner1.jpg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="../uploads/asset-taobao-banner3.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="../uploads/asset-taobao-banner4.jpg" alt="">
+                </a>
+            </li>
+        </ul>
+        <!-- 箭头 -->
+        <a class="prev" href="">
+            左
+        </a>
+        <a class="next" href="">
+            右
+        </a>
+        <!-- 圆点 -->
+        <ol>
+            <li></li>
+            <li class="banner_dot_active"></li>
+            <li></li>
+        </ol>
+    </div>
+    
+</body>
+</html>
